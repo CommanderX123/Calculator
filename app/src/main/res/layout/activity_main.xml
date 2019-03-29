@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="textEnd"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/resultField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textAlignment="textEnd"/>
+        <TextView
+            android:id="@+id/operationField"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/numberField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Type ..."
+        android:textAlignment="textEnd"
+        android:background="@android:color/transparent"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+
+         >
+        <Button android:text="@string/C"
+        android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onOperationClick"
+            />
+
+        <Button android:text="@string/plusdivmin"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"/>
+
+        <Button android:text="@string/mod"
+        android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onOperationClick"/>
+
+        <Button
+            android:text="@string/divide"
+            android:layout_columnWeight="1"
+            android:background="@drawable/textlines"
+            android:textColor="@color/textCol"
+            android:onClick="onOperationClick"
+            />
+
+        <Button android:text="@string/_7"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"/>
+
+        <Button android:text="@string/_8"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"/>
+
+        <Button android:text="@string/_9"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"/>
+
+        <Button android:text="@string/x"
+            android:layout_columnWeight="1"
+            android:background="@drawable/textlines"
+            android:textColor="@color/textCol"
+            android:onClick="onOperationClick"/>
+
+        <Button android:text="@string/_4"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"/>
+
+        <Button android:text="@string/_5"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"/>
+
+        <Button android:text="@string/_6"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"/>
+
+        <Button
+            android:text="@string/minus"
+            android:layout_columnWeight="1"
+            android:background="@drawable/textlines"
+            android:textColor="@color/textCol"
+            android:onClick="onOperationClick"
+            />
+
+        <Button android:text="@string/_1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"
+            />
+
+        <Button android:text="@string/_2"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"/>
+
+        <Button android:text="@string/_3"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"/>
+
+        <Button
+            android:text="@string/plus"
+            android:layout_columnWeight="1"
+            android:background="@drawable/textlines"
+            android:textColor="@color/textCol"
+            android:onClick="onOperationClick"/>
+
+        <Button
+            android:text="@string/zero"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:layout_gravity="fill"
+            android:layout_columnSpan="2"
+            android:onClick="onNumberClick"/>
+
+        <Button
+            android:text="@string/dot"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_style"
+            android:onClick="onNumberClick"
+            />
+
+        <Button
+
+            android:text="@string/equals"
+            android:layout_columnWeight="1"
+            android:background="@drawable/textlines"
+            android:textColor="@color/textCol"
+            android:onClick="onOperationClick"
+             />
+
+    </GridLayout>
+
+</LinearLayout>
